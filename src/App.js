@@ -5,12 +5,10 @@ import SearchIcon from "./search.svg";
 import "./App.css";
 
 
-//73fd74f3
-
-const API_URL= 'http://www.omdbapi.com/?apikey=73fd74f3';
+const API_URL = 'https://www.omdbapi.com/?apikey=73fd74f3'; // Updated to use HTTPS
 
 const App = () => {
-    const [searchTerm, setSearchTerm] = useState(""); //searchTerm, setSearch term
+    const [searchTerm, setSearchTerm] = useState(""); 
     const [movies, setMovies] = useState([]);
   
     useEffect(() => {
